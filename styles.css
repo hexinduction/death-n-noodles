@@ -6,7 +6,7 @@ body {
 
 
 .death {
-  background-image: url(../images/death.jpg);
+  background-image: url('../images/death.jpg');
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
