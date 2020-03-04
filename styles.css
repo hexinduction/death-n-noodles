@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8d79f;
+}
+
+
+.death {
+  background-image: url("../images/death.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  height: 100vh;
+
+}
+
+#steam {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0;
+  left: 50%;
+  top: 60%;
+
+}
+
+.steam-one {
+  animation: steam-one 4s ease-out infinite;
+}
+
+.steam-three {
+  animation: steam-one 4s ease-out 1s infinite;
+}
+
+@keyframes steam-one {
+    0% {
+      transform: translateY(0) translateX(0) scale(0.25);
+      opacity: 0;
+    }
+
+    80% {
+      transform: translateY(-200px) translateX(-50px) scale(1);
+      opacity: 0.3;
+    }
+
+    100% {
+      transform: translateY(-245px) translateX(-50px) scale(1);
+      opacity: 0.1;
+    }
+}
+
+
+.steam-two {
+  animation: steam-two 4s ease-out .5s infinite;
+}
+
+.steam-four {
+  animation: steam-two 4s ease-out 1.5s infinite;
+}
+
+@keyframes steam-two {
+    0% {
+      transform: translateY(0) translateX(0) scale(0.25);
+      opacity: 0.25;
+    }
+
+    80% {
+      transform: translateY(-200px) translateX(40px) scale(1.2);
+      opacity: 0.25;
+    }
+
+    100% {
+      transform: translateY(-220px) translateX(45px) scale(1);
+      opacity: 0.1;
+    }
+}
