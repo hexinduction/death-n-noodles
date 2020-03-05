@@ -70,3 +70,9 @@ body {
       opacity: 0.25;
     }
 }
+
+@media screen and (min-width: 800px ) {
+  #steam {
+    top: 10%;
+  }
+}
